@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_host"
+    app:startDestination="@id/journalFragment">
+
+    <fragment
+        android:id="@+id/journalFragment"
+        android:name="com.slapstick.doculock.ui.JournalFragment"
+        android:label="fragment_journal"
+        tools:layout="@layout/fragment_journal" >
+        <action
+            android:id="@+id/action_journalFragment_to_addJournalFragment"
+            app:destination="@id/addJournalFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_journalFragment_to_updateJournalFragment"
+            app:destination="@id/updateJournalFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/addJournalFragment"
+        android:name="com.slapstick.doculock.ui.AddJournalFragment"
+        android:label="fragment_add_journal"
+        tools:layout="@layout/fragment_add_journal" >
+        <action
+            android:id="@+id/action_addJournalFragment_to_journalFragment"
+            app:destination="@id/journalFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/journalFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/updateJournalFragment"
+        android:name="com.slapstick.doculock.ui.UpdateJournalFragment"
+        android:label="fragment_update_journal"
+        tools:layout="@layout/fragment_update_journal" >
+        <argument
+            android:name="currentJournal"
+            app:argType="com.slapstick.doculock.db.Journal" />
+        <action
+            android:id="@+id/action_updateJournalFragment_to_journalFragment"
+            app:destination="@id/journalFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/journalFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+</navigation>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item android:id="@+id/menu_search"
+        android:icon="@drawable/ic_search"
+        android:title="Search"
+        app:showAsAction="ifRoom"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        tools:targetApi="o"/>
+
+    <item android:id="@+id/menu_delete"
+        android:icon="@drawable/ic_baseline_delete_forever_24"
+        android:title="DeleteAll"
+        app:showAsAction="ifRoom"/>
+
+</menu>

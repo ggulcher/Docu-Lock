@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">DocuLock</string>
+    <string name="title_activity_journal">JournalActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_of_your_entry">Title of your entry...</string>
+    <string name="any_notes_thoughts_or_secrets">Any notes, thoughts, or secrets...</string>
+    <string name="add_new_secrets">Add new secrets...</string>
+    <string name="add_new_entry">Add new entry</string>
+    <string name="press_to_enter">Press to enter</string>
+    <string name="title">TITLE</string>
+    <string name="content">CONTENT</string>
+
+    <string-array name="colors">
+        <item>None</item>
+        <item>Red</item>
+        <item>Yellow</item>
+        <item>Blue</item>
+        <item>Black</item>
+    </string-array>
+</resources>
